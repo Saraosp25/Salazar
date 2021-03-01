@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Sara Salazar</title>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+
+    <style>
+      #Pantalla {
+        width: 900px;
+        height: 700px;
+        border: 0.1px solid #fcfcfc;
+        border-radius: 5px 0px 0px 5px;
+        background-color: #99c4be;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Lato", sans-serif;
+        font-weight: 200;
+      }
+
+      body {
+        background-color: whitesmoke;
+      }
+
+      h1 {
+        margin-right: 10px;
+      }
+
+      .myButton {
+        user-select: none;
+        border-radius: 5px;
+        border: 0.5px solid #48c2fa;
+        display: inline-block;
+        cursor: pointer;
+        color: #333333;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      .container {
+        display: flex;
+        padding: 15px;
+        position: relative;
+      }
+
+      .datacontainer {
+        padding: 10px;
+        flex-grow: 1;
+        width: 300px;
+        border: 1px solid #fcfcfc;
+        border-radius: 0px 5px 5px 0px;
+      }
+
+      .mco {
+        display: table;
+        margin: 0 auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="Pantalla"></div>
+      <hr>
+      <div class="datacontainer">
+        <center><h1>Algortimos</h1></center>
+        <center><p>Sara Salazar</p></center>
+        <hr>
+        <div class="botones">
+          <br />
+          <br />
+          <center>
+            <a onclick="Matriz()" class="myButton">Mostrar Matriz</a>
+            
+          </center>
+        </div>
+
+        <div class="mco">
+          <pre id="matriz"></pre>
+        </div>
+        
+      </div>
+      <hr>
+    </div>
+    
+    <script src="javita.js"></script>
+    <hr>
+  </body>
+ 
+</html>
